@@ -1,0 +1,23 @@
+# Secrets
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Runtime / generated data
+data/
+cache/
+out/
+broadcast/
+
+# Backups
+*.bak
+*.bak2
+*.bak3
+*.bak4
+*.bak5
+
+# OS
+.DS_Store
