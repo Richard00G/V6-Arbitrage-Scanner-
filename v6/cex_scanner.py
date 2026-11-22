@@ -1,5 +1,6 @@
 import asyncio
 import json
+import os
 import sqlite3
 import time
 from dataclasses import dataclass
@@ -149,6 +150,7 @@ def iso_now():
 # ============================================================
 
 def init_db():
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
 
     conn.execute(
